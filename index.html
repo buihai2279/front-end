@@ -24,7 +24,7 @@
 				$("#owl-demo").owlCarousel({
 				      navigation : true, // Show next and prev buttons
 				      slideSpeed : 400,
-				      autoPlay: 5000,
+				      autoPlay: 5500,
 				      lazyLoad : true,
 				      paginationSpeed : 5000,
 				      paginationNumbers: true,
@@ -33,64 +33,64 @@
 				      navigationText : ["Trước","Tiếp"],
 				      singleItem:true,
 				});
-				
 			});
 		</script>
 	</head>
 <body>
-<div class="container-fluid ">
+<div class="container-fluid">
 
-	<div class="navbar navbar-default header " role="navigation">
-	<br class="hidden-xs">
-	    <div class="navbar-header">
-            <div class="col-md-3 col-lg-2 col-sm-3 col-xs-8 col-xs-offset-2 col-sm-offset-0">
-                <img class="img-responsive" src="images/logo.png" alt="Logo">
-            </div>
-            
-            <div class="col-md-7 col-lg-7 col-xs-12 col-sm-6">
-                <div class="input-group search-box ">
-				    <input type="text" class="form-control search-input" placeholder="Search for...">
-			        <span class="input-group-btn">
-			        	<button class="btn search-button btn-info" type="button">Search!</button>
-				    </span>
-			    </div>
-            </div>
-            <div class="col-md-2 col-lg-2 col-xs-6 col-sm-2 cart">
-            	<button type="button" class="btn btn-info col-xs-12 col-md-12 col-lg-7"  data-toggle="modal" data-target="#myModal">
-            		<i class="glyphicon glyphicon-shopping-cart"></i> 5 Giỏ hàng
-            	</button>
-        	</div>
 
-            <div class="col-xs-6">
-	            <button type="button" class="navbar-toggle button-menu col-xs-12" data-toggle="collapse" data-target=".menutop">
-		            <span class="icon-toggle pull-left">Menu</span>
-		            <i class="glyphicon glyphicon-list pull-right"></i>
-		        </button>
-	        </div>
-        	<div class="col-md-12 col-xs-12 collapse navbar-collapse menutop ">
-                <ul class="nav navbar-nav ">
-                    <li>
-						<a class='item-menu'class="dropdown-toggle" data-toggle="dropdown">
-                            Danh muc san pham <i class="glyphicon glyphicon-chevron-down"></i></a>
-                         	<ul class="dropdown-menu sub-menu" >
-                                <li><a href=" " >Category 1</a></li>
-                                <li><a href=" ">Category 2</a></li>
-                                <li><a href=" ">Category 3</a></li>
-                            </ul>
-                    </li>
-                    <li><a class='item-menu' href="">San pham moi</a></li>
-                    <li><a class='item-menu' href="">Khuyen mai</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right ">
-                    <li><a class='item-menu'data-toggle="modal" data-target="#myModal2" href="">Đăng ký / Đăng Nhập</a></li>
-                </ul>
+	<header class="row">
+		<br class="hidden-xs">
+		<div class="col-md-3 col-lg-2 col-sm-3 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+	        <img class="img-responsive" src="images/logo.png" alt="Logo">
+	    </div>
+	    <div class="col-md-7 col-lg-7 col-xs-12 col-sm-6">
+	        <div class="input-group search-box ">
+			    <input type="text" class="form-control search-input" placeholder="Search for...">
+		        <span class="input-group-btn">
+		        	<button class="btn search-button btn-info" type="button">Search!</button>
+			    </span>
+		    </div>
+	    </div>
+		<div class="col-md-2 col-lg-2 col-xs-6 col-sm-2 cart">
+	    	<button type="button" class="btn btn-info col-xs-12 col-md-12 col-lg-7"  data-toggle="modal" data-target="#myModal">
+	    		<i class="glyphicon glyphicon-shopping-cart"></i> 5 Giỏ hàng
+	    	</button>
+		</div>
+	
+		<div class="navbar no_margin" role="navigation">
+			<div class="navbar-header">
+				<div class="col-xs-6">
+				    <button type="button" class=" col-xs-12 navbar-toggle button_menu" data-toggle="collapse" data-target=".menutop">
+				        <span class="icon-toggle pull-left">Menu</span>
+				        <i class="glyphicon glyphicon-list pull-right"></i>
+				    </button>
+				</div>
 			</div>
-			<!-- /end menu -->
-    	</div><!--.navbar-collapse-->
-	</div>
-	<!-- . Navbar -->
-	<div class="row box1">
-		<div class="col-lg-8 col-md-8 box-slide">	
+	    	<div class="col-md-12 col-xs-12 collapse navbar-collapse menutop ">
+	            <ul class="nav navbar-nav">
+	                <li class="list_menu">
+						<a class='item_menu'class="dropdown-toggle" data-toggle="dropdown">
+	                        Danh muc san pham <i class="glyphicon glyphicon-chevron-down"></i></a>
+	                     	<ul class="dropdown-menu sub-menu" >
+	                            <li><a href=" ">Category 1</a></li>
+	                            <li><a href=" ">Category 2</a></li>
+	                            <li><a href=" ">Category 3</a></li>
+	                        </ul>
+	                </li>
+	                <li class="list_menu"><a class='item_menu' href="">San pham moi</a></li>
+	                <li class="list_menu"><a class='item_menu' href="">Khuyen mai</a></li>
+	            </ul>
+	            <ul class="nav navbar-nav navbar-right ">
+	                <li class="list_menu"><a class='item_menu'data-toggle="modal" data-target="#myModal2" href="">Đăng ký / Đăng Nhập</a></li>
+	            </ul>
+			</div><!-- /end menu -->
+		</div>
+		<!-- . Navbar -->
+		</header>
+
+		<div class="col-lg-8 col-md-8 box_slide">	
 			<div id="owl-demo" class="owl-carousel owl-theme">
 			  <div class="item"><a href=""><img src="images/fullimage1.jpg" class="img-responsive" alt="The Last of us"></a>
 					<p class="description text-center"><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></p>
@@ -104,7 +104,6 @@
 			  <div class="item"><a href=""><img src="images/fullimage2.jpg" class="img-responsive" alt="The Last of us"></a>
 					<p class="description text-center"><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></p>
 			  </div>
-
 			</div>
 		</div>
 		<div class="clearfix hidden-lg hidden-md"></div>
@@ -117,16 +116,15 @@
 		  			<li><a href="#">Tin tuc 1</a></li>
 		  			<li><a href="#">Tin tuc 2</a></li>
 		  			<li><a href="#">Tin tuc 3</a></li>
-		  			<li><a href="#">Tin tuc 4</a></li>
-		  			<li><a href="#">Tin tuc 5</a></li>
 			  </ul>
 		  </div>
 		</div>
-	</div>
+		<div class="clearfix"></div>
+
 	<div class="panel panel-pro">
 		<div class="panel-heading  navbar-default heading-cate">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-tittle">
+				<button type="button" class="navbar-toggle button_menu" data-toggle="collapse" data-target=".nav-tittle">
 		            <span class="icon-toggle">
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
@@ -168,367 +166,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<i class="price">10.990.000 ₫</i>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						
-						<i class="price">10.990.000 ₫</i>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div> -->
 		</div>
 	</div>
-<!-- 	<div class="panel panel-pro">
-		<div class="panel-heading  navbar-default heading-cate">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-tittle">
-		            <span class="icon-toggle">
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </span>
-		        </button>
-				<a href="#" class="navbar-brand">Dien thoai</a>
-			</div>
-			<div class="navbar-collapse collapse nav-tittle">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Dien thoai</a></li>
-					<li><a href="#">Dien thoai</a></li>
-					<li><a href="#">Dien thoai</a></li>
-					<li><a href="#">Dien thoai</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="panel-body product" >
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-							<span>
-								<ul>
-									<li>Ram</li>
-									<li>Man hinh</li>
-									<li>CPU</li>
-									<li>Bo nho trong</li>
-									<li>Chip</li>
-								</ul>
-							</span>
-					</div>
-					<div class="detail">
-						<h2 href="#" class="name "><a  href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="  btn-link view "><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="panel panel-pro">
-		<div class="panel-heading  navbar-default heading-cate">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-tittle">
-		            <span class="icon-toggle">
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </span>
-		        </button>
-				<a href="#" class="navbar-brand">Dien thoai</a>
-			</div>
-			<div class="navbar-collapse collapse nav-tittle">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Dien thoai</a></li>
-					<li><a href="#">Dien thoai</a></li>
-					<li><a href="#">Dien thoai</a></li>
-					<li><a href="#">Dien thoai</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="panel-body product" >
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-							<span>
-								<ul>
-									<li>Ram</li>
-									<li>Man hinh</li>
-									<li>CPU</li>
-									<li>Bo nho trong</li>
-									<li>Chip</li>
-								</ul>
-							</span>
-					</div>
-					<div class="detail">
-						<h2 href="#" class="name "><a  href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="  btn-link view "><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-6 col-md-3 ">
-				<div class="well text-center well-sm">
-					<div class="info">
-						<img src="images/6.png" class="img-responsive " alt="">
-						<span>
-							<ul>
-								<li>Ram</li>
-								<li>Man hinh</li>
-								<li>CPU</li>
-								<li>Bo nho trong</li>
-								<li>Chip</li>
-							</ul>
-						</span>
-					</div>
-					<div class="detail ">
-						<h2 href="#" class="name"><a href="#">Samsung Galaxy A8</a></h2>
-						<hr>
-						<a href="#" class="btn-link view"><small>Xem chi tiết </small></a>
-						<i class="price">10.990.000 ₫</i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 	<footer>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-2">

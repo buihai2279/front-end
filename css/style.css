@@ -4,7 +4,7 @@
 body{
   	background: #E9EAED;
 }
-.header{
+header{
 	border: 0;
   	background: #fff;
 	padding: 0;
@@ -17,57 +17,46 @@ body{
 		margin-top: 5px;
 	}
 }
-.box1{
-	padding: 0 15px;
-}
 .button-menu{
 	margin: 5px 5px 5px 0;
 }
 .menutop{
 	width: 100%;
-	overflow: hidden;
 	border-top: solid 1px #f0f0f0;
 	border-bottom: solid 1px #f0f0f0;
 	margin: 15px 0 0 0 ;
-	padding: 0 15px 0 15px;
+	/*padding: 0 10px;*/
 }
-.box-slide{
-	padding: 0px;
-}
-body > div > div.navbar.navbar-default.header > div >  div > ul > li > a{
-	padding: 8px 10px;
-}
-a.item-menu{
+.item_menu{
 	color: #2C3E50;
 	border-left: 1px solid #E9EAED; 
 	padding: 8px 10px;
 }
-@media (max-width: 768px) {
-	a.item-menu{
-		color: #2C3E50;
-		border-left: 1px solid #E9EAED; 
-		padding: 8px 0px;
-		margin-left: 10px;
-	}
-}
-@media (min-width: 769px) {
-	div.navbar.navbar-default.header > div >  div > ul > li:hover >.dropdown-menu,
-	div.navbar.navbar-default.header > div >  div > ul > li:hover >.dropdown-menu a:hover  {
-	    display: block;
-		color: #3498DB; 
-	}
-}
-div.navbar.navbar-default.header > div >  div > ul > li.open >a,
-div.navbar.navbar-default.header > div >  div > ul li:hover a.item-menu{
+.list_menu:hover .item_menu:hover{
 	color: #3498DB;
 	background: url('../images/bg.png');
 }
-.sub-menu li a{
-	border-left:2px solid #fff;
-	padding-left:10px;
+@media (max-width: 768px) {
+	.item_menu{
+		border-left: none; 
+	}
 }
+@media (min-width: 769px) {
+	.list_menu:hover ul{
+	    display: block;
+	}
+}
+.list_menu .open .item_menu,
 .sub-menu li a:hover{
+	color: #3498DB;
 	background: url('../images/bg.png');
+}
+.no_margin{
+	margin: 0;
+	border: none;
+}
+.box_slide{
+	padding: 0px;
 }
 .news{
 	padding: 0 ;
@@ -120,7 +109,7 @@ div.navbar-collapse.collapse.nav-tittle > ul > li > a:hover{
 }
 .panel-pro{
 	border: none;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	border-radius: 4px;
 }
 .product{
@@ -239,14 +228,14 @@ div.detail>hr{
 	color: #3498DB;
 	text-decoration: none;
 }
-.navbar-toggle{
+.button_menu{
 	background: url('../images/bg.png');
 }
 footer{
 	padding-bottom: 20px;
 	height: auto;
 	outline: hidden;
-	padding: 0 5px 15px 10px;
+	padding: 0 5px 15px 5px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
 	border-radius: 3px;
 	background: #fff;
